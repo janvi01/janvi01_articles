@@ -3,7 +3,7 @@ title: "var vs let vs const in depth in JavaScript"
 datePublished: Wed Mar 06 2024 07:02:08 GMT+0000 (Coordinated Universal Time)
 cuid: cltfgbbds000609ju231x9ca6
 slug: var-vs-let-vs-const-in-depth-in-javascript
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1709708454547/17868f49-88cd-4176-9a8c-891bf6f627c6.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1709708621435/2c4b0ed6-dff3-45ae-b586-8089ecfda599.png
 tags: javascript, developer
 
 ---
@@ -41,11 +41,11 @@ Before the release of ES6, variable declarations using `var` were the norm. Howe
         ```
         
     
-    It looks like let isn't hoisted, **but it is**, let's understand how.  
+    It looks like let isn't hoisted, but it is, let's understand how.
     
-    During the hoisting stage, both variable 'a' and variable 'b' are initialized as undefined. However, variable 'b' is stored in the global or window storage space, while variable 'a' is stored in a separate memory object called a script. This means that 'a' can only be accessed after it has been assigned a value. Attempting to access 'a' before it has been assigned a value will throw an error.  
+    During the hoisting stage, both variable 'a' and variable 'b' are initialized as undefined. However, variable 'b' is stored in the global or window storage space, while variable 'a' is stored in a separate memory object called a script. This means that 'a' can only be accessed after it has been assigned a value. Attempting to access 'a' before it has been assigned a value will throw an error.
     
-    There is a term known as Temporal Dead Zone. It refers to the time between when a let variable is hoisted and when it is initialized with a value.  
+    There is a term known as Temporal Dead Zone. It refers to the time between when a let variable is hoisted and when it is initialized with a value.
     
     Any line of code before the "let a = 10" line in the above example is considered the temporal dead zone for the variable 'a'. This means that since the variable 'a' is not accessible on a global scale, it is also not accessible in the context of window/this also.
     
