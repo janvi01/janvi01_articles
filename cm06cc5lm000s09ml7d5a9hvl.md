@@ -22,7 +22,7 @@ What will we cover below?
     
 * Misusing and Debugging common issues with `useMemo`
     
-* How it is different from `useCallback`?
+* How is it different from `useCallback`?
     
 
 ### What is useMemo?
@@ -100,7 +100,7 @@ This simply gives you an edge in rendering components faster even if it has expe
 * The `useMemo` hook should not be used for side effects, as it’s intended to memoize a value, not to perform side effects.
     
 
-### How it is different from `useCallback`?
+### How is it different from `useCallback`?
 
 | **Aspect** | `useMemo` | `useCallback` |
 | --- | --- | --- |
